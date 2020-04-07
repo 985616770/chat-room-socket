@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>聊天室</title>
+    <link rel="stylesheet" href="./css/chat.css" />
+  </head>
+  <body>
+    <div class="login-wrapper">
+      <div class="login-content">
+        <div class="login-title">用户登录</div>
+        <input class="login-input" type="text" placeholder="请输入昵称" id="loginName" />
+        <button class="login-btn">登 录</button>
+      </div>
+    </div>
+    <div class="chat-wrapper hide">
+      <div class="chat-title">多人聊天室</div>
+      <div class="chat-content-wrapper">
+        <div class="chat-content clearFix"></div>
+      </div>
+      <div class="chat-bottom">
+        <input class="chat-input" type="text" name="sendText" id="sendText" />
+        <button class="chat-sendBtn">发送</button>
+      </div>
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script src="./js/chat.js"></script>
+  </body>
+</html>
